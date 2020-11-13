@@ -1,0 +1,1 @@
+console.log("Printed from the service worker!");
