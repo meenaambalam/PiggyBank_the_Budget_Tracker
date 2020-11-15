@@ -6,6 +6,7 @@ const FILES_TO_CACHE = [
     '/icons/icon-192x192.png',
     '/icons/icon-512x512.png',
     '/index.js',
+    '/indexed_DB.js',
     '/manifest.webmanifest',
     '/styles.css'
 ];
@@ -15,10 +16,10 @@ const DATA_CACHE_NAME = "data-cache-v1" ;
 
 //install
 self.addEventListener("install", function (evt){
-    // //pre cache image data
-    // evt.waitUntil(
-    //     caches.open(DATA_CACHE_NAME).then((cache) => cache.add("/api/transaction"))
-    // );
+    //pre cache transaction data
+    evt.waitUntil(
+        caches.open(DATA_CACHE_NAME).then((cache) => cache.add("/api/transaction"))
+    );
 
     //pre cache all static assets
     evt.waitUntil(
