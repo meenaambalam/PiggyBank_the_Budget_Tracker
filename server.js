@@ -20,6 +20,10 @@ mongoose.connect("mongodb://localhost/budget", {
   useFindAndModify: false
 });
 
+//MongoDB connection setup including for Heroku
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/budget";
+mongoose.connect(MONGODB_URI, {useNewUrlParser: true, useFindAndModify: false});
+
 // routes
 app.use(require("./routes/api.js"));
 
