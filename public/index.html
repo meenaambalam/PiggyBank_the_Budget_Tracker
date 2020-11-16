@@ -56,6 +56,8 @@
         navigator.serviceWorker.register("service-worker-budgetTracker.js")
           .then(reg => {
             console.log("We found your service worker file!", reg);
+          }).catch(function(error){
+            console.log('ServiceWorker registration failed: ', error);
           });
       });
     }
