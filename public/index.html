@@ -53,7 +53,7 @@
   <script>
     if ("serviceWorker" in navigator){
       window.addEventListener("load",()=>{
-        navigator.serviceWorker.register("/service-worker-budgetTracker.js")
+        navigator.serviceWorker.register("service-worker-budgetTracker.js")
           .then(reg => {
             console.log("We found your service worker file!", reg);
           }).catch(function(error){
