@@ -1,4 +1,4 @@
-console.log("Printed from the service worker!");
+console.log("Printed from the service worker!");// 
 const FILES_TO_CACHE = [
     '/',
     '/index.html',
