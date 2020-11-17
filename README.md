@@ -85,6 +85,6 @@ MIT
         
 ## URL:
 
-GitHub Repository: https://github.com/meenaambalam/meenaambalam.github.io
+GitHub Repository: https://github.com/meenaambalam/PiggyBank_the_Budget_Tracker
 
 Application URL: https://piggybank-budget-tracker.herokuapp.com/
