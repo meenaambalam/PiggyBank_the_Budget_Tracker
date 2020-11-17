@@ -2,7 +2,7 @@
 const express = require("express");  //routing
 const logger = require("morgan");    //logging
 const mongoose = require("mongoose");   //ODM (Object Document Mapper) for MongoDB NoSQL DB
-const compression = require("compression");
+const compression = require("compression"); //compression
 
 // Setting up PORT
 const PORT = process.env.PORT || 3000;
@@ -12,7 +12,7 @@ const app = express();
 
 app.use(logger("dev"));
 
-app.use(compression());
+app.use(compression()); // The middleware will attempt to compress response bodies for all request that traverse through the middleware, based on the given options
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
