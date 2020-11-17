@@ -1,63 +1,90 @@
-# Unit 18 PWA Homework: Online/Offline Budget Trackers
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+# PiggyBank,the Budget Tracker
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+## Table of contents
 
-Offline Functionality:
+1. [Description](#description)
 
-  * Enter deposits offline
+2. [Install Guide](#install)
 
-  * Enter expenses offline
+3. [Usage](#usage)
+
+4. [Credits](#credits)
+
+5. [license](#license)
+
+6. [Screenshots](#screenshots)
+
+7. [URL](#urls)
+        
+<div id="description"/>
+        
+## Description
+```
+A NodeJS, Progressive Web Application (PWA), to track Budget and to allow offline access and functionality to the users.
+```
+        
+<div id="install"/>
+        
+## Installation Instruction
+```
+NodeJS for server side run time environment, express for handling api and html routes, and mongoose which is a ODM(Object Document Mapper) for MongoDB and Node JS. Also use Materialize CSS for color.
+
+Other NodeJS modules like, Compression for compression, Morgan for logging are also used in this App.
+Data is saved in noSQL DB, MongoDB.
+Heroku and Mongo Atlas for the Application deployment..
+```
+        
+<div id="usage"/>
+        
+## Usage
+```
+The app is a single page Web Application. It is a PWA (Progressive Web App) that can be installed as a stand alone app. Uses ServiceWorkers to handle and keep track of the offline transactions in indexDB and update into the DB when the App comes back online. Both data and static routes are cached to help to have a seamless offline experience. 
+
+Offline functionality:
+1) Enter deposits offline
+2) Enter expenses offline
 
 When brought back online:
-
-  * Offline entries should be added to tracker.
-
-## User Story
-AS AN avid traveller
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling
-
-## Business Context
-
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
+1) Offline entries gets added to tracker.
 
 
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
+A perfect use case, is a user who is a avid traveller . With this App, they will be able to track their withdrawals and deposits with or without a data/internet connections. This will help them to keep track of their account balance when they are traveling.
+```
+        
+<div id="credits"/>
+        
+## Credits
+```
+* Keiren Anthony - Helped with identifying the multiple mongoose connections issue with the App version hosted on Heroku.
+```
+        
+<div id="license"/>
+        
+## License
+```
+MIT
+```
+        
+<div id="screenshots"/>
+        
+## Screenshots
 
-- - -
+1) Application on Load:
+![Screen #1](/public/Assets/Screenshots/Screenshot_on_Load.PNG)
+2) Transaction with network Offline:
+![Screen #2](/public/Assets/Screenshots/Screenshot_Offline_Transaction_pic1.PNG)
+3) Offline Transaction saved in indexedDB:
+![Screen #3](/public/Assets/Screenshots/Screenshot_Offline_Transaction_pic2.PNG)
+4) MongoDB Collection with the offline transaction after the App is Online:
+![Screen #4](/public/Assets/Screenshots/Screenshot_MongoDB_BudgetDB.PNG)
 
-## Commit Early and Often
+        
+<div id="urls"/>
+        
+## URL:
 
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+GitHub Repository: https://github.com/meenaambalam/meenaambalam.github.io
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
-
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
-
-* Follow these guidelines for committing:
-
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
-
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
-
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
-
-  * Test your application before you commit to ensure functionality at every step in the development process
-
-* We would like you to have well over 200 commits by graduation, so commit early and often!
-
-* Deploy your application with [Heroku and MongoDB Atlas.](../04-Important/MongoAtlas-Deploy.md)
-
-## Submission on BCS
-
-* You are required to submit the following:
-
-  * the URL to the deployed application
-
-  * the URL to the Github repository
-
+Application URL: https://piggybank-budget-tracker.herokuapp.com/
