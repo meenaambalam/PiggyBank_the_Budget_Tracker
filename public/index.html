@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#317EFB">
+  <meta name="theme-color" content="#81c784">
   <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Compiled and minified CSS -->
+    <!-- Locally downloaded version of "Compiled and minified CSS" -->
   <link rel="stylesheet" href="/cdn/materialize.min.css">
   
   <!-- Compiled and minified JavaScript -->
@@ -16,7 +16,7 @@
   <!-- Startup configuration -->
   <link rel="manifest" href="manifest.webmanifest">
 
-  <title>Budget Tracker</title>
+  <title> PiggyBank, the Budget Tracker</title>
 </head>
 <body>
   <div class="wrapper  green lighten-2">
@@ -50,6 +50,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="indexed_DB.js"></script>
   <script src="index.js"></script>
+  <!--Register Service Worker at the time of App load-->
   <script>
     if ("serviceWorker" in navigator){
       window.addEventListener("load",()=>{
